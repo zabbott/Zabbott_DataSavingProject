@@ -1747,7 +1747,7 @@ GameObject:
   - component: {fileID: 619323695}
   - component: {fileID: 619323694}
   m_Layer: 5
-  m_Name: Button
+  m_Name: PlayerPrefsSave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2255,7 +2255,7 @@ GameObject:
   - component: {fileID: 741845437}
   - component: {fileID: 741845436}
   m_Layer: 5
-  m_Name: Button (5)
+  m_Name: BinarySave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2328,7 +2328,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1058842120}
         m_TargetAssemblyTypeName: UIReadSaveData, Assembly-CSharp
-        m_MethodName: UpdateSaveData
+        m_MethodName: SaveWithBson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2389,7 +2389,7 @@ GameObject:
   - component: {fileID: 787338181}
   - component: {fileID: 787338180}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: PlayerPrefsLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2699,7 +2699,7 @@ GameObject:
   - component: {fileID: 992959220}
   - component: {fileID: 992959219}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: JsonLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2770,13 +2770,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1561464455}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1561464458}
+        m_TargetAssemblyTypeName: SaveLoad, Assembly-CSharp
+        m_MethodName: LoadJson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3756,7 +3756,7 @@ GameObject:
   - component: {fileID: 1432367522}
   - component: {fileID: 1432367521}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: JsonSave
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3829,7 +3829,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1058842120}
         m_TargetAssemblyTypeName: UIReadSaveData, Assembly-CSharp
-        m_MethodName: UpdateSaveData
+        m_MethodName: SaveWithJson
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3910,6 +3910,13 @@ MonoBehaviour:
     Health: 0
     Name: 
     Position: {x: 0, y: 0}
+    Test: 
+  SaveDataBinaryInst:
+    Health: 0
+    Name: 
+    PositionX: 0
+    PositionY: 0
+    Test: 
   UIRS: {fileID: 1058842120}
 --- !u!4 &1561464459
 Transform:
@@ -4642,7 +4649,7 @@ GameObject:
   - component: {fileID: 1814020795}
   - component: {fileID: 1814020794}
   m_Layer: 5
-  m_Name: Button (4)
+  m_Name: BinaryLoad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4713,13 +4720,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1561464455}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 1561464458}
+        m_TargetAssemblyTypeName: SaveLoad, Assembly-CSharp
+        m_MethodName: LoadBinary
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
