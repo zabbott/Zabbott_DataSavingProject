@@ -1817,7 +1817,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 619323695}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1058842120}
+        m_TargetAssemblyTypeName: UIReadSaveData, Assembly-CSharp
+        m_MethodName: UpdateSaveData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &619323695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2313,7 +2325,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 741845437}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1058842120}
+        m_TargetAssemblyTypeName: UIReadSaveData, Assembly-CSharp
+        m_MethodName: UpdateSaveData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &741845437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2435,7 +2459,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 787338181}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1561464458}
+        m_TargetAssemblyTypeName: SaveLoad, Assembly-CSharp
+        m_MethodName: LoadPlayerPrefs
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &787338181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2733,7 +2769,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 992959220}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1561464455}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &992959220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2940,9 +2988,10 @@ MonoBehaviour:
   HealthText: {fileID: 1950134878}
   PositionText: {fileID: 569299921}
   PositionYText: {fileID: 917734214}
-  PPE: {fileID: 0}
-  JSONEx: {fileID: 0}
-  BSONEx: {fileID: 0}
+  SaveLoad: {fileID: 1561464458}
+  UsePPE: 0
+  UseJSON: 0
+  UseBinary: 0
 --- !u!4 &1058842121
 Transform:
   m_ObjectHideFlags: 0
@@ -3777,7 +3826,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1432367522}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1058842120}
+        m_TargetAssemblyTypeName: UIReadSaveData, Assembly-CSharp
+        m_MethodName: UpdateSaveData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1432367522
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3826,8 +3887,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1561464459}
   - component: {fileID: 1561464458}
-  - component: {fileID: 1561464457}
-  - component: {fileID: 1561464456}
   m_Layer: 0
   m_Name: SaveLoadController
   m_TagString: Untagged
@@ -3835,30 +3894,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1561464456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561464455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7ceaf0c3cb713b24794e6a1bc5beb956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1561464457
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561464455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6c28614097ae284599ba7822d574d95, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1561464458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4417,9 +4452,10 @@ MonoBehaviour:
   HealthText: {fileID: 0}
   PositionText: {fileID: 0}
   PositionYText: {fileID: 0}
-  PPE: {fileID: 0}
-  JSONEx: {fileID: 0}
-  BSONEx: {fileID: 0}
+  SaveLoad: {fileID: 0}
+  UsePPE: 0
+  UseJSON: 0
+  UseBinary: 0
 --- !u!114 &1796553989
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4676,7 +4712,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1814020795}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1561464455}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1814020795
 MonoBehaviour:
   m_ObjectHideFlags: 0
