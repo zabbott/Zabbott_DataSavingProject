@@ -9,10 +9,13 @@ public class SaveLoad : MonoBehaviour
     public BinaryCompatiableSaveDataClass SaveDataBinaryInst; 
     public UIReadSaveData UIRS;
     private string Path;
+    private string BinaryPath;
 
     private void Start()
     {
         Path = string.Concat(Application.persistentDataPath, "/Data.json");
+        BinaryPath = string.Concat(Application.persistentDataPath, "/BData.txt");
+
     }
     public void SavePlayerPrefs()
     {
@@ -64,8 +67,8 @@ public class SaveLoad : MonoBehaviour
 
     public void SaveBinary()
     {
-        Debug.Log(Path);
-        FileStream datastream = new FileStream(Path, FileMode.Create);
+        Debug.Log(BinaryPath);
+        FileStream datastream = new FileStream(BinaryPath, FileMode.Create);
         BinaryFormatter bf = new BinaryFormatter();
         bf.Serialize(datastream, SaveDataBinaryInst);
         datastream.Close();
@@ -73,9 +76,9 @@ public class SaveLoad : MonoBehaviour
 
     public void LoadBinary()
     {
-        if (File.Exists(Path))
+        if (File.Exists(BinaryPath))
         {
-            FileStream dataStream = new FileStream(Path, FileMode.Open);
+            FileStream dataStream = new FileStream(BinaryPath, FileMode.Open);
 
             BinaryFormatter converter = new BinaryFormatter();
             SaveDataBinaryInst = converter.Deserialize(dataStream) as BinaryCompatiableSaveDataClass;
